@@ -20,7 +20,7 @@ Seq[5] = [1,0,1,0]
 Seq[6] = [0,0,1,0]
 Seq[7] = [0,1,1,0]
  
-GPIO.setup(enable_pin, GPIO.OUT)
+#GPIO.setup(enable_pin, GPIO.OUT)
 GPIO.setup(coil_A_1_pin, GPIO.OUT)
 GPIO.setup(coil_A_2_pin, GPIO.OUT)
 GPIO.setup(coil_B_1_pin, GPIO.OUT)
