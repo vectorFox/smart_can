@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "smart-can-one-point-o",
+  "private_key_id": "7cfb93622abf4463b15886cf834bed43314b2c03",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCeDP4je53uOYMD\ngWI5VsPoMLPG9VZMjF4P53ZlTl2WBQhKwbMsGUoBBb+Pz1PPVR3bEGR319fu8Rp1\n9zDpzKb0Tq5BRmqjd05/YGbQ/WgQ37rWmi7H3+FOyL/VvA8gCuHBlYAQx0XWRhlm\nocVUHh3ttWPLMVEEVFM6vXRAaCjxvVgDjikPNF8M4/xnKpFxWAByUZ8E3CRIH1EO\nLZNHzjhfGRTGyi+SU9A7boG21W00dyJYQcZnf5Cn+9n3wG00bJEmEerHi1cReALw\nduQhCoYx3QN9CTF5j7zysnjbJR6sgytc550spM4vWqCGQoDSNpvnZbs79divR8ML\nc2gX6E2nAgMBAAECggEAL0oh7En7eiD5I15eHlvoqBuSXvBfTu4c4tNVqIAnHlEJ\nJx0H2CUE8INgys20/O8xzK798KHDeTnoue0pVHsoZSb5moxQMfLrqM8WVGfN8GaQ\nx89AOguxpVoJlBD90Y+P9tUdiWembLNyvDOhEEcmm05PuqdZ31q/wG6ZTwAbaCDP\niShZpz5k83vmNmOv4j9Y/OWZZGcwgDtMjTJOT9zTkCRK4mQn8s8khstsz/t54B2u\nrqvIKp4MNQUdLgwoyzkGTQgaVTdFcGD/nD3O4aqNOf9UdFcs2R8tdH46OhVEE6op\nswvoZ/OmGBi4DW7ktAjz8hTR78AkSfxz593cc2eVcQKBgQDWtQWHNnGpvliI2rhR\nWpdiAeHDcH0N/GpWVhWn1tXD1eGQEtHkuDY4Pp3z/92V3bmxE1CtzqGG3JoPQq/U\n7yHIeRU257jBrm/iJe6rhJgj4PlJvK/vZX5FOh9+jAeRPTLMpLP98tyJFXLGwpEA\nZe2FO8TIZDuCvUQQoflGDRh8SQKBgQC8codKPQYs1Dtz777k33KLqZ/OShEH9/kr\nb0yhTGapcwMF4CX0hKr9kjTPT9qqIkbdS/WdhTC4JWtzONpaNtRNBA9rSHcmMzRp\nXK4RD4Xj1GnqFgxLiiBX1NRtYwgCXxVKUxS6NnPXVg21eAn8+98UkW4PIDxQJa1n\nPF/SklMabwKBgDznMGBAY1GA+uAnGq2JAvP8EKw9lluHRCqlVJM9b3mTi94wWHWG\ng2rE6E00QQin0mqWTgZfXJZCsTiu8+10v6J8JjZi2JeoAXimxeLFQ9q5kD0IVueT\nZJQCfriIxATA1U4TUjMw1rnT6bDTtAnm388xOwqU1ASr50jIiUsDn/RxAoGAHV0r\nP6IqqCmZ6gLdmARJcQHJaPeZl8hIB0CcjDW/eX/2ZJ/8yhEyI7j4iaVDyWb1692+\nNAFhChCqoZWmUJBinG2ZiXoNNuKbtB9A8F+e2VVr+5Hb8JlhWM5NG45m3Re71Y0E\nmc+KVW+PS0udItKMfEP9BlZbj5GPZ5q8w68RS/kCgYEA1rE2WK7kG727UMWQoNZ4\n0Aao8OysGFF3tQ8SG9XsPrgA013p1usLnM92cvgHCnEbY7x5UqLlATc854dAeD1C\n7zJ4vGduOpVinkjyaziZeaE0eAZM1sMeMdK7vzjQWAYbhGXC+V2M+EdDCpn/2rkM\njLar3R37KehrniL/J1Pfvfc=\n-----END PRIVATE KEY-----\n",
+  "client_email": "smart-can@smart-can-one-point-o.iam.gserviceaccount.com",
+  "client_id": "106388130106005399091",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/smart-can%40smart-can-one-point-o.iam.gserviceaccount.com"
+}
