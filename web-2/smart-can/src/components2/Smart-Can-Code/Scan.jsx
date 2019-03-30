@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class Stats extends Component {
+class Scanner extends Component {
   render() {
     return (
         <div className="Account">
@@ -10,4 +10,4 @@ class Stats extends Component {
   }
 }
 
-export default Stats;
+export default Scanner;
