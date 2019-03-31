@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "746929297231",
+    "firebase_url": "https://smart-can-dc74d.firebaseio.com",
+    "project_id": "smart-can-dc74d",
+    "storage_bucket": "smart-can-dc74d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:746929297231:android:682c1ed6281e0695",
+        "android_client_info": {
+          "package_name": "com.example.ertheosiswadi.smart_can"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "746929297231-87hfapuukh0uflnkes2hvqbsm7mfeun9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLZtIavWHv5OEbCbuMmEDGbX1FXEEcWeo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
