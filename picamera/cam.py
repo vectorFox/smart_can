@@ -54,7 +54,7 @@ def get_image_details():
     for label in labels:
         print(label.description)
 
-    os.remove('captured/img.jpg')
+    #os.remove('captured/img.jpg')
     return labels
 
 def updateDatabase(category, tags):
@@ -115,7 +115,7 @@ while True:
 
     for r in recyclables:
         for l in labels:
-            if l.description in r or r in l.description:
+            if l.description.lower() in r or r in l.description.lower():
                 is_recyclable = True
                 break
         if is_recyclable:
@@ -130,7 +130,7 @@ while True:
     if is_recyclable:
         #requests.post('https://us-central1-smart-can-d74d.cloudfunctions.net/helloWorld', data = { 'type':'recycable', 'labels':','.join(labels.description)})
         r = requests.post(url, json = data )
-        print(r)
+        print "r"
         rotate("COUNTER", 0.5)
         time.sleep(1)
         rotate("CLOCK" , 0.5)
@@ -138,7 +138,7 @@ while True:
     else:                                                                                                                                                  
         #request.post('https://us-central1-smart-can-d74d.cloudfunctions.net/helloWorld', data = { 'type':'non-recycable', 'labels':','.join(labels.description)})
         r = requests.post(url, json = data )
-        print(r)
+        print "t"
         rotate("CLOCK" , 0.5)
         time.sleep(1)
         rotate("COUNTER" , 0.5)
