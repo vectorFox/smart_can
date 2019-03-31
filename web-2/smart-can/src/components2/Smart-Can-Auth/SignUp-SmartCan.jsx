@@ -2,9 +2,8 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { signIn } from '../../redux/actions/AuthActions'
 import { Redirect } from 'react-router-dom'
-import { NavLink } from 'reactstrap'
 
-class Login extends Component {
+class SignUp extends Component {
     state = {
         email: '',
         password: ''
@@ -32,16 +31,15 @@ class Login extends Component {
                 </div>
                 <form onSubmit={this.handleSubmit}>
                     <div className='form-group'>
-                        <label htmlFor='email'>Email Address</label>
+                        <label htmlFor='email'>Enter Email Address</label>
                         <input type='email' class='form-control' id='email' onChange={this.handleChange} />
                     </div>
                     <div className='form-group'>
-                        <label htmlFor='password'>Password</label>
+                        <label htmlFor='password'>Enter Password</label>
                         <input type='password' class='form-control' id='password' onChange={this.handleChange} />
                     </div>
                     <div className='text-center'>
-                        <button className='btn btn-info text-center'>Login</button>
-                        <NavLink className="wText"  href="/signup"> Create Account </NavLink>
+                        <button className='btn btn-info text-center'>Sign Up</button>
                     </div>
                 </form>
             </div>
@@ -64,4 +62,4 @@ const mapDispatchToProps = (dispatch) => {
     }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Login)
+export default connect(mapStateToProps, mapDispatchToProps)(SignUp)

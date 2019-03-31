@@ -1,9 +1,13 @@
 import React from 'react'
 import { Navbar, NavbarBrand } from 'reactstrap';
 import SignedOutLinks from './Smart-Can-SignedOutLinks';
+import SignedInLinks from './Smart-Can-SignedInLinks';
+import { connect } from 'react-redux'
 import './navbar.css'
 
 const Nav = (props) => {
+    const { auth } = props;
+    const links = auth.uid ? <SignedInLinks/> : <SignedOutLinks />;
     return (
         <div>
             <Navbar className="transparent" color="faded">
@@ -11,11 +15,16 @@ const Nav = (props) => {
             <i class="fas fa-dumpster-fire white"></i>
               <b> Smart Can </b>
             </NavbarBrand>
-            <SignedOutLinks></SignedOutLinks>
+            { links }
           </Navbar>
         </div>
     )
 }
 
+const mapStateToProps = (state) => {
+    return {
+        auth: state.firebase.auth
+    }
+}
 
-export default Nav
+export default connect(mapStateToProps)(Nav)

@@ -8,10 +8,9 @@ const SignedInLinks = (props) => {
     return (
         <div>
              <Nav>
-                <NavItem><NavLink className="wText"  href="/"> Home </NavLink></NavItem>
                 <NavItem><NavLink className="wText"  href="/profile"> Profile </NavLink></NavItem>
                 <NavItem><NavLink className="wText"  href="/scan"> Scan </NavLink></NavItem>
-                <Button color="primary" onClick={props.signOut}> Log Out </Button>{' '}
+                <NavItem><NavLink className="wText" onClick={props.signOut}  href="#"> Log Out </NavLink></NavItem>
             </Nav>
         </div>
     )
