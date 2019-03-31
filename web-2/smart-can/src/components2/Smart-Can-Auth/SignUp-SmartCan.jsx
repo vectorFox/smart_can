@@ -1,12 +1,14 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { signIn } from '../../redux/actions/AuthActions'
+import { signUp } from '../../redux/actions/AuthActions'
 import { Redirect } from 'react-router-dom'
 
 class SignUp extends Component {
     state = {
         email: '',
-        password: ''
+        password: '',
+        firstName: '',
+        lastName: ''
     }
 
     handleChange = (e) => {
@@ -17,12 +19,12 @@ class SignUp extends Component {
 
     handleSubmit = (e) => {
         e.preventDefault();
-        this.props.signIn(this.state);
+        this.props.signUp(this.state);
     }
 
     render() {
         const {authError, auth} = this.props;
-        if (auth.uid) return <Redirect to='/' />;
+        if (auth.uid) return <Redirect to='/profile' />;
         return (
             <div className='container-fluid col-md-4'>
                 <div className='text-center'>
@@ -31,12 +33,20 @@ class SignUp extends Component {
                 </div>
                 <form onSubmit={this.handleSubmit}>
                     <div className='form-group'>
-                        <label htmlFor='email'>Enter Email Address</label>
+                        <label htmlFor='email'>Email Address</label>
                         <input type='email' class='form-control' id='email' onChange={this.handleChange} />
                     </div>
                     <div className='form-group'>
-                        <label htmlFor='password'>Enter Password</label>
+                        <label htmlFor='password'>Password</label>
                         <input type='password' class='form-control' id='password' onChange={this.handleChange} />
+                    </div>
+                    <div className='form-group'>
+                        <label htmlFor='firstName'>First Name</label>
+                        <input type='text' class='form-control' id='firstName' onChange={this.handleChange} />
+                    </div>
+                    <div className='form-group'>
+                        <label htmlFor='lastName'>Last Name</label>
+                        <input type='text' class='form-control' id='lastName' onChange={this.handleChange} />
                     </div>
                     <div className='text-center'>
                         <button className='btn btn-info text-center'>Sign Up</button>
@@ -58,7 +68,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        signIn: (creds) => dispatch(signIn(creds))
+        signUp: (creds) => dispatch(signUp(creds))
     }
 }
 

@@ -3,10 +3,12 @@ import { firestoreConnect } from 'react-redux-firebase'
 import { compose } from 'redux'
 import { connect } from 'react-redux'
 import { Container, Spinner} from 'reactstrap';
+import { Redirect } from 'react-router-dom'
 
 class Scanner extends Component {
   render() {
     const { auth, stats } = this.props;
+    if (!this.props.auth.uid) return <Redirect to='/' />;
     console.log(auth)
     return (
         <div className="Account">

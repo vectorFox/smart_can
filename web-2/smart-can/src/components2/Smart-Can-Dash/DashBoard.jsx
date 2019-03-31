@@ -9,7 +9,6 @@ class Home extends Component {
   render() {
     const { stats, auth } = this.props;
     const placeholder = [5]
-    if (!auth.uid) return <Redirect to='/login' />
     return (
         <Container className="Account text-center">
             <br/>
