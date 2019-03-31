@@ -13,9 +13,9 @@ class About extends Component {
           <p className='lead text-center'>Smart, Sustainable Waste Management </p>
           <Row>
             <Col sm="10" md={{ size: 8, offset: 2 }}>
-              <br/>
+              <br className='mobile-break'/>
               <Media center>
-                <img className='special_image' src={LA} />
+                <img className='special_image mobile-break' src={LA} />
               </Media>
               <br/>
               <p>
