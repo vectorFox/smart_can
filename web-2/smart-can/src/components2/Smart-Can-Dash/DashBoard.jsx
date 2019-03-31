@@ -7,8 +7,9 @@ import { Container, Spinner} from 'reactstrap';
 
 class Home extends Component {
   render() {
-    const { stats } = this.props;
+    const { stats, auth } = this.props;
     const placeholder = [5]
+    if (!auth.uid) return <Redirect to='/login' />
     return (
         <Container className="Account text-center">
             <br/>
@@ -41,7 +42,8 @@ class Home extends Component {
 const mapStateToProps = (state) => {
   console.log(state);
   return {
-      stats: state.firestore.ordered.global
+      stats: state.firestore.ordered.global,
+      auth: state.firebase.auth
   }
 }
 
